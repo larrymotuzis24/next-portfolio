@@ -23,6 +23,18 @@ body {
 }
 
 .slideshow-container {
-  border: 2px solid #ffffff; /* Or any color that contrasts well with your background */
-  border-radius: 8px; /* Optional: for rounded corners */
+  border: 2px solid #ffffff; 
+  border-radius: 8px; 
+}
+
+
+.underline-gradient::after {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 3px;
+  margin: 0 auto; 
+  background: linear-gradient(to right, #2e41eb00, #000000); 
+  margin-bottom: 5px;
+
 }
