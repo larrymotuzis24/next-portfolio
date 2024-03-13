@@ -46,7 +46,7 @@ const Slideshow: React.FC = () => {
   }, []);
 
   return (
-<div className="relative flex justify-center items-center w-full shadow-2xl rounded-lg overflow-hidden" style={{ minHeight: '640px' }}>
+<div className="relative flex justify-center items-center w-full shadow-2xl rounded-lg overflow-hidden pb-6" style={{ minHeight: '640px' }}>
     {projects.map((project, index) => (
       <div
         key={index}

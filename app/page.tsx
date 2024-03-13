@@ -1,4 +1,5 @@
 import Slideshow from "./components/Slideshow";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
@@ -13,7 +14,7 @@ export default function Home() {
       <nav className="flex items-center justify-between w-full max-w-6xl px-4 py-6 mx-auto bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg rounded-md border border-gray-700 shadow-sm text-white">
         <div className="flex items-center">
           <Link
-            href="/about"
+            href="#about"
             className="hover:text-blue-600 transition-colors mr-4"
           >
             About Me
@@ -57,7 +58,7 @@ export default function Home() {
       </nav>
 
       <div className="mt-6 pb-4 flex flex-col justify-center items-center px-4">
-        <div className="border-8 border-gray-300 shadow-2xl rounded-lg overflow-hidden bg-white bg-opacity-60 max-w-6xl w-full p-4">
+        <div className="border-8 border-gray-300 shadow-2xl rounded-lg overflow-hidden bg-white bg-opacity-80 max-w-6xl w-full p-4">
           <h2 className="text-3xl font-bold text-black dark:text-black text-center relative underline-gradient">
             Recent Work
           </h2>
@@ -117,6 +118,49 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <section
+            id="about"
+            className="py-12 lg:py-24 bg-cover bg-center"
+            style={{ backgroundImage: 'url("/bg2.webp")' }}
+          >
+            <div className="container mx-auto px-4">
+              <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center">
+                <div className="lg:flex-1 lg:mr-8 text-center lg:text-left">
+                  <div className="relative mx-auto lg:mx-0 rounded-full w-48 h-48 lg:w-56 lg:h-56 shadow-lg">
+                    <Image
+                      src="/lm_profile.JPG"
+                      alt="Professional"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-full"
+                    />
+                  </div>
+                  <div className="relative mx-auto lg:mx-0 rounded-full w-48 h-48 lg:w-56 lg:h-56 shadow-lg mt-4 lg:mt-8">
+                    <Image
+                      src="/lm_bball.png"
+                      alt="Basketball"
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center 20%" 
+                      className="rounded-full"
+                    />
+                  </div>
+                </div>
+                <div className="lg:flex-1 mt-6 lg:mt-0">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-center lg:text-left text-gray-800 mb-4">
+                    About Me
+                  </h2>
+                  <p className="text-md lg:text-lg text-gray-700 text-center lg:text-left">
+                    I am a former division one basketball player turned software
+                    developer. As a full-stack web developer, I've had the
+                    opportunity to work with clients on creating and redesigning
+                    company websites, as well as developing web applications
+                    tailored to meet their unique needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>

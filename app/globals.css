@@ -8,6 +8,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -35,6 +40,6 @@ body {
   height: 3px;
   margin: 0 auto; 
   background: linear-gradient(to right, #2e41eb00, #000000); 
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 
 }
