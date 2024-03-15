@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', 
-  assetPrefix: '/potfolio/',
-  basePath: '/potfolio',
-  trailingSlash: true,
-}
-
-module.exports = nextConfig;
+    assetPrefix: '/next-portfolio/',
+    basePath: '/next-portfolio',
+    trailingSlash: true,
+    output: 'export'
+  }
+  
+  module.exports = nextConfig;
+  
