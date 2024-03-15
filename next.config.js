@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    assetPrefix: '/next-portfolio/',
+module.exports = {
     basePath: '/next-portfolio',
-    trailingSlash: true,
-  }
-  
-  module.exports = nextConfig;
-  
+    assetPrefix: '/next-portfolio/',
+  };
