@@ -80,8 +80,8 @@ export default function Home() {
         </div>
       )}
 
-      <div className="mt-6 pb-4 flex flex-col justify-center items-center px-4">
-        <div className="border-8 border-gray-300 shadow-2xl rounded-lg overflow-hidden bg-white bg-opacity-80 max-w-6xl w-full p-4">
+      <div className="mt-6 pb-4 flex flex-col justify-center items-center px-4 ">
+        <div className="border-8 border-gray-300 shadow-2xl rounded-lg overflow-hidden bg-white bg-opacity-80 max-w-6xl w-full p-4 backdrop-blur-md">
           <h2 className="text-3xl font-bold text-black dark:text-black text-center relative underline-gradient">
             Recent Work
           </h2>
@@ -169,7 +169,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="lg:flex-1 mt-6 lg:mt-0">
+              <div id="about" className="lg:flex-1 mt-6 lg:mt-0">
                 <h2 className="text-3xl lg:text-4xl font-bold text-center lg:text-left text-gray-800 mb-4">
                   About Me
                 </h2>
