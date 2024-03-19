@@ -90,7 +90,7 @@ export default function Home() {
         </div>
 
 
-        <div className="bg-white mt-6 mb-6 bg-opacity-90 rounded-lg shadow-xl md:p-12 flex flex-col lg:flex-col items-center">
+        <div className="bg-white mt-6 mb-6 bg-opacity-90 rounded-lg shadow-xl md:p-12 flex flex-col lg:flex-col items-center backdrop-blur-md">
           <h2 className="text-3xl font-extrabold text-black mb-2">
             Technologies I&apos;ve been working with
           </h2>
